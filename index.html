@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse Electronics | Next-Gen Gadgets & Flagship Electronics</title>
+    <meta name="description" content="Discover premium electronic products, high-performance laptops, noise-canceling headphones, smartwatches, and VR headsets with instant free shipping.">
+    <!-- Google Fonts & Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span>Tech<span class="gradient-text">Pulse</span></span>
+            </a>
+
+            <div class="nav-search">
+                <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" id="searchInput" placeholder="Search headphones, 4K laptops, smartwatches...">
+            </div>
+
+            <div class="nav-actions">
+                <button class="action-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+
+                <button class="action-btn" title="Saved Wishlist">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    <span class="badge-count" id="wishlistBadge">0</span>
+                </button>
+
+                <button class="action-btn" id="cartBtn" title="Shopping Cart">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    <span class="badge-count" id="cartBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                        <span>NEW TECH ARRIVALS 2026</span>
+                    </div>
+                    <h1 class="hero-title">Experience <span class="gradient-text">Next-Gen</span> Electronics</h1>
+                    <p class="hero-description">Upgrade your setup with premium high-fidelity audio, ultra-thin gaming laptops, spatial VR headsets, and titanium smartwatches.</p>
+                    <div class="hero-cta">
+                        <a href="#catalog" class="btn-primary">
+                            Explore Products
+                            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <a href="#flashSale" class="btn-secondary">Flash Sale Deals</a>
+                    </div>
+                </div>
+
+                <div class="hero-banner-card">
+                    <img src="assets/images/hero.jpg" alt="Futuristic Electronic Products Display Banner" id="heroBannerImg" onerror="this.src='https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="hero-floating-badge">
+                        <div class="pulse-dot"></div>
+                        <div>
+                            <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-main);">LIVE EXPRESS SHIPPING</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">Same-day dispatch guaranteed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Bar -->
+        <section class="features-bar">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <div>
+                    <div class="feature-title">Free Worldwide Shipping</div>
+                    <div class="feature-desc">On all orders over $500</div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div>
+                    <div class="feature-title">2-Year Hardware Warranty</div>
+                    <div class="feature-desc">100% genuine guaranteed</div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <div>
+                    <div class="feature-title">24/7 Tech Support</div>
+                    <div class="feature-desc">Live specialist chat</div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <div>
+                    <div class="feature-title">30-Day Free Returns</div>
+                    <div class="feature-desc">Hassle-free money back</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog & Product Grid Section -->
+        <section class="catalog-section" id="catalog">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Explore Electronic Gear</h2>
+                    <p class="section-subtitle">Filter by category, price, or search for your favorite gadgets.</p>
+                </div>
+            </div>
+
+            <!-- Toolbar & Filters -->
+            <div class="filter-toolbar">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">All Products</button>
+                    <button class="tab-btn" data-category="audio">Audio & Headphones</button>
+                    <button class="tab-btn" data-category="laptops">Laptops & Displays</button>
+                    <button class="tab-btn" data-category="wearables">Smart Wearables</button>
+                    <button class="tab-btn" data-category="gaming">Gaming & VR</button>
+                    <button class="tab-btn" data-category="smarthome">Smart Home</button>
+                    <button class="tab-btn" data-category="accessories">Accessories</button>
+                </div>
+
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="priceRange">Max Price:</label>
+                        <input type="range" id="priceRange" class="price-slider" min="50" max="2000" step="50" value="2000">
+                        <span class="price-badge" id="priceValue">$2000</span>
+                    </div>
+
+                    <div>
+                        <select id="sortSelect" class="sort-select">
+                            <option value="popular">Sort by Popularity</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Product Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Injected via app.js -->
+            </div>
+        </section>
+
+        <!-- Flash Sale Section -->
+        <section id="flashSale" style="margin: 4rem 0; background: var(--accent-gradient); border-radius: var(--radius-lg); padding: 3rem; color: #fff; position: relative; overflow: hidden;">
+            <div style="max-width: 600px;">
+                <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">SPECIAL OFFER</span>
+                <h2 style="font-size: 2.4rem; margin: 0.8rem 0;">Get $20 OFF your order!</h2>
+                <p style="opacity: 0.9; margin-bottom: 1.5rem;">Use promo code <strong style="background: rgba(0,0,0,0.3); padding: 0.2rem 0.6rem; border-radius: 4px; color: #fbbf24;">TECH20</strong> at checkout to claim your instant discount.</p>
+                <a href="#catalog" class="btn-secondary" style="background: #fff; color: #000; border: none;">Shop Flash Sale Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sliding Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-btn" id="closeCartBtn">&times;</button>
+        </div>
+
+        <div class="cart-body" id="cartItemsList">
+            <!-- Dynamic Cart Items -->
+        </div>
+
+        <div class="cart-footer">
+            <div style="display: flex; gap: 0.5rem;">
+                <input type="text" id="promoInput" placeholder="Promo code (e.g. TECH20)" style="flex: 1; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-main); padding: 0.6rem; border-radius: var(--radius-sm); font-size: 0.85rem;">
+                <button onclick="window.applyPromoCode()" class="btn-secondary" style="padding: 0.6rem 1rem; font-size: 0.85rem;">Apply</button>
+            </div>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Estimated Tax (8%)</span>
+                <span id="cartTax">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span id="cartShipping">FREE</span>
+            </div>
+            <div class="summary-row total">
+                <span>Grand Total</span>
+                <span id="cartGrandTotal">$0.00</span>
+            </div>
+
+            <button class="btn-primary" id="checkoutBtn" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                Proceed to Checkout
+            </button>
+        </div>
+    </aside>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-container">
+            <button class="close-btn modal-close" id="closeProductModalBtn">&times;</button>
+            <div id="productModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-container checkout-modal">
+            <button class="close-btn modal-close" id="closeCheckoutBtn">&times;</button>
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Checkout & Order Confirmation</h2>
+            
+            <form onsubmit="window.submitOrder(event)">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" required placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" required placeholder="Doe">
+                    </div>
+                    <div class="form-group full">
+                        <label>Email Address</label>
+                        <input type="email" required placeholder="john.doe@example.com">
+                    </div>
+                    <div class="form-group full">
+                        <label>Shipping Address</label>
+                        <input type="text" required placeholder="123 Innovation Way, Suite 400">
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" required placeholder="San Francisco">
+                    </div>
+                    <div class="form-group">
+                        <label>Postal Code</label>
+                        <input type="text" required placeholder="94107">
+                    </div>
+                    <div class="form-group full">
+                        <label>Payment Card Number</label>
+                        <input type="text" required placeholder="4532 •••• •••• 8921">
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Total Amount Due</div>
+                        <div id="checkoutPayAmount" style="font-size: 1.4rem; font-weight: 700; color: var(--accent-primary);">$0.00</div>
+                    </div>
+                    <span style="font-size: 0.8rem; background: rgba(16,185,129,0.15); color: var(--success); padding: 0.3rem 0.7rem; border-radius: var(--radius-full); font-weight: 600;">🔒 256-Bit SSL Encrypted</span>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                    Confirm & Complete Purchase
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="brand-logo">
+                        <div class="logo-icon">
+                            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <span>Tech<span class="gradient-text">Pulse</span></span>
+                    </a>
+                    <p>Your premier destination for next-generation electronics, high-fidelity audio equipment, and cutting-edge digital gadgets.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalog">Audio & Headphones</a></li>
+                        <li><a href="#catalog">Laptops & Displays</a></li>
+                        <li><a href="#catalog">Smart Wearables</a></li>
+                        <li><a href="#catalog">Gaming & VR</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Warranty Claim</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@techpulse.io</p>
+                    <p>Phone: +1 (800) 555-TECH</p>
+                    <p>Hours: Mon - Fri (24/7)</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 TechPulse Electronics Inc. All rights reserved.</div>
+                <div>Designed with Precision & High-Performance UX</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
